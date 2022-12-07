@@ -1,7 +1,7 @@
 # 페어매칭관리
 
 ## 기능 목록
-- [ ] 메뉴 출력 기능 -OutputView#printMenu()
+- [x] 메뉴 출력 기능 -OutputView#printMenu()
 - [ ] 메뉴 입력 기능 -InputView#readMenu()
 - [ ] 페어 매칭 기능 -PairMatching#pair()
 - [ ] 매칭 결과 출력 기능 -OutputView#printResult()
