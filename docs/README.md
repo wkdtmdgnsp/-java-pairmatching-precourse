@@ -2,7 +2,7 @@
 
 ## 기능 목록
 - [x] 메뉴 출력 기능 -OutputView#printMenu()
-- [ ] 메뉴 입력 기능 -InputView#readMenu()
+- [x] 메뉴 입력 기능 -InputView#readMenu()
   - [x] 메뉴 입력 예외 처리 기능 -UserException#menuException() 
 - [ ] 페어 매칭 기능 -PairMatching#pair()
 - [ ] 매칭 결과 출력 기능 -OutputView#printResult()
