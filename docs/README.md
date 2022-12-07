@@ -1,12 +1,14 @@
 # 페어매칭관리
 
 ## 기능 목록
-- [ ] 페어 매칭 기능
-- [ ] 매칭 결과 출력 기능
-- [ ] 매칭 정보 출력 기능
-- [ ] 과정, 레벨, 미션 정보 입력 기능
-- [ ] 매칭 조회 기능
-- [ ] 페어 초기화 기능
+- [ ] 메뉴 출력 기능 -OutputView#printMenu()
+- [ ] 메뉴 입력 기능 -InputView#readMenu()
+- [ ] 페어 매칭 기능 -PairMatching#pair()
+- [ ] 매칭 결과 출력 기능 -OutputView#printResult()
+- [ ] 매칭 정보 출력 기능 -OutputView#printMathInfo()
+- [ ] 과정, 레벨, 미션 정보 입력 기능 -InputView#readInfo()
+- [ ] 매칭 조회 기능 -PairMatching#reMatch()
+- [ ] 페어 초기화 기능 -PairMatching#reset()
 
 ## 기능 요구사항
 - 우테코의 미션은 페어 프로그래밍으로 진행된다.
