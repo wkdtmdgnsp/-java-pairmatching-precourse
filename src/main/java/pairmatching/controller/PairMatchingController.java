@@ -11,6 +11,7 @@ public class PairMatchingController {
     public void run() {
         while (!menuNumber.contentEquals("Q")) {
             menu();
+            selectMenu();
         }
     }
 
@@ -21,5 +22,22 @@ public class PairMatchingController {
         } catch (IllegalArgumentException e) {
             menu();
         }
+    }
+
+    private void selectMenu() {
+        if (menuNumber.contentEquals("1")) {
+            pair();
+            return;
+        }
+        if (menuNumber.contentEquals("2")) {
+            return;
+        }
+        if (menuNumber.contentEquals("3")) {
+            return;
+        }
+    }
+
+    private void pair() {
+        outputView.printMathInfo();
     }
 }

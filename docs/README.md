@@ -6,7 +6,7 @@
   - [x] 메뉴 입력 예외 처리 기능 -UserException#menuException() 
 - [ ] 페어 매칭 기능 -PairMatching#pair()
 - [ ] 매칭 결과 출력 기능 -OutputView#printResult()
-- [ ] 매칭 정보 출력 기능 -OutputView#printMathInfo()
+- [x] 매칭 정보 출력 기능 -OutputView#printMathInfo()
 - [ ] 과정, 레벨, 미션 정보 입력 기능 -InputView#readInfo()
 - [ ] 매칭 조회 기능 -PairMatching#reMatch()
 - [ ] 페어 초기화 기능 -PairMatching#reset()
