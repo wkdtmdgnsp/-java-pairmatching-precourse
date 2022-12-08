@@ -19,6 +19,14 @@ public class InputView {
     }
 
     public List<String> readInfo() {
-        return null;
+        try {
+            System.out.println("과정, 레벨, 미션을 선택하세요.");
+            System.out.println("ex) 백엔드, 레벨1, 자동차경주");
+            List<String> info = userException.infoToList(Console.readLine());
+            userException.infoNoneException(info);
+            return info;
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException();
+        }
     }
 }
