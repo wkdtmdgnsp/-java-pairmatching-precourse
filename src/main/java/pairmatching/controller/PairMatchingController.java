@@ -38,6 +38,11 @@ public class PairMatchingController {
     }
 
     private void pair() {
-        outputView.printMathInfo();
+        try {
+            outputView.printMathInfo();
+            inputView.readInfo();
+        } catch (IllegalArgumentException e) {
+            pair();
+        }
     }
 }
