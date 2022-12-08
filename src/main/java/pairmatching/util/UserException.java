@@ -1,5 +1,8 @@
 package pairmatching.util;
 
+import pairmatching.model.Course;
+import pairmatching.model.Mission;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,5 +25,12 @@ public class UserException {
             throw new IllegalArgumentException();
         }
         return info;
+    }
+
+    public void infoNoneException(List<String> info) {
+        if (Course.findCourse(info.get(0)) == null || Mission.findMission(info.get(2), info.get(1)) == null) {
+            System.out.println("[ERROR] 올바른 정보를 입력해 주세요.");
+            throw new IllegalArgumentException();
+        }
     }
 }
