@@ -1,13 +1,16 @@
 package pairmatching.model;
 
+import camp.nextstep.edu.missionutils.Randoms;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class PairMatching {
-    private List<String> backCrewNames;
-    private List<String> frontCrewNames;
+    private List<String> backCrewNames = new ArrayList<>();
+    private List<String> frontCrewNames = new ArrayList<>();
 
     public PairMatching() {
         try {
@@ -25,6 +28,11 @@ public class PairMatching {
 
     public void pair() {
 
+    }
+
+    private List<String> randomCrewNames(List<String> crewNames) {
+        List<String> shuffledCrew = Randoms.shuffle(crewNames);
+        return shuffledCrew;
     }
 
     public void reset() {
