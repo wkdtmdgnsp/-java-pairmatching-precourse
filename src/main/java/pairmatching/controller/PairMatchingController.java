@@ -1,5 +1,6 @@
 package pairmatching.controller;
 
+import pairmatching.model.PairMatching;
 import pairmatching.view.InputView;
 import pairmatching.view.OutputView;
 
@@ -7,6 +8,7 @@ public class PairMatchingController {
     private OutputView outputView = new OutputView();
     private InputView inputView = new InputView();
     private String menuNumber = "";
+    private PairMatching pairMatching = new PairMatching();
 
     public void run() {
         while (!menuNumber.contentEquals("Q")) {

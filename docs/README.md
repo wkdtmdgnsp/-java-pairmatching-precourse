@@ -5,6 +5,7 @@
 - [x] 메뉴 입력 기능 -InputView#readMenu()
   - [x] 메뉴 입력 예외 처리 기능 -UserException#menuException() 
 - [ ] 페어 매칭 기능 -PairMatching#pair()
+- [x] 크루 목록 생성 기능 -PairMatching#PairMatching()
 - [ ] 매칭 결과 출력 기능 -OutputView#printResult()
 - [x] 매칭 정보 출력 기능 -OutputView#printMathInfo()
 - [x] 과정, 레벨, 미션 정보 입력 기능 -InputView#readInfo()
