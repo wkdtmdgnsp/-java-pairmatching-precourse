@@ -14,11 +14,11 @@ public class PairMatching {
 
     public PairMatching() {
         try {
-            Scanner scanner = new Scanner(new File("C:\\-java-pairmatching-precourse\\src\\main\\resources\\backend-crew.md"));
+            Scanner scanner = new Scanner(new File("src/main/resources/backend-crew.md"));
             while (scanner.hasNextLine()) {
                 backCrewNames.add(scanner.nextLine());
             }
-            scanner = new Scanner(new File("C:\\-java-pairmatching-precourse\\src\\main\\resources\\frontend-crew.md"));
+            scanner = new Scanner(new File("src/main/resources/frontend-crew.md"));
             while (scanner.hasNextLine()) {
                 frontCrewNames.add(scanner.nextLine());
             }
@@ -26,8 +26,8 @@ public class PairMatching {
         }
     }
 
-    public void pair() {
-
+    public void pair(List<String> pairInfo) {
+        
     }
 
     private List<String> randomCrewNames(List<String> crewNames) {

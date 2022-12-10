@@ -42,7 +42,7 @@ public class PairMatchingController {
     private void pair() {
         try {
             outputView.printMathInfo();
-            inputView.readInfo();
+            pairMatching.pair(inputView.readInfo());
         } catch (IllegalArgumentException e) {
             pair();
         }
