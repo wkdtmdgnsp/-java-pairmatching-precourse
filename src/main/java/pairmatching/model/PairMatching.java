@@ -28,6 +28,25 @@ public class PairMatching {
 
     public void pair(List<String> pairInfo) {
         List<String> shuffledCrew = randomCrewNames(pairInfo.get(0));
+        List<List<String>> pairMatching = matching(shuffledCrew);
+    }
+
+    private List<List<String>> matching(List<String> shuffledCrew) {
+        List<List<String>> pairMatch = new ArrayList<>();
+        List<String> match = new ArrayList<>();
+        for (int i=0; i<shuffledCrew.size(); i++) {
+            if (match.size() != 2) {
+                match.add(shuffledCrew.get(i));
+            }
+            if (match.size() == 2) {
+                pairMatch.add(match);
+                match = new ArrayList<>();
+            }
+        }
+        if (shuffledCrew.size() % 2 != 0) {
+            pairMatch.get(pairMatch.size()-1).add(match.get(0));
+        }
+        return pairMatch;
     }
 
     private List<String> randomCrewNames(String course) {
