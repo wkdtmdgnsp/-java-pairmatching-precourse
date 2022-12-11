@@ -27,11 +27,15 @@ public class PairMatching {
     }
 
     public void pair(List<String> pairInfo) {
-        
+        List<String> shuffledCrew = randomCrewNames(pairInfo.get(0));
     }
 
-    private List<String> randomCrewNames(List<String> crewNames) {
-        List<String> shuffledCrew = Randoms.shuffle(crewNames);
+    private List<String> randomCrewNames(String course) {
+        if (Course.findCourse(course) == Course.BACKEND) {
+            List<String> shuffledCrew = Randoms.shuffle(backCrewNames);
+            return shuffledCrew;
+        }
+        List<String> shuffledCrew = Randoms.shuffle(frontCrewNames);
         return shuffledCrew;
     }
 
